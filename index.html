@@ -50,9 +50,9 @@
       --gold-lt:   #e8b253;
       --gold-dim:  rgba(201,146,42,0.18);
       --gold-bdr:  rgba(201,146,42,0.30);
-      --text:      #f0e4cc;
-      --text-sec:  #a07850;
-      --text-dim:  #6b4f34;
+      --text:      #faf3e3;
+      --text-sec:  #cbab7c;
+      --text-dim:  #8f7257;
       --rule:      rgba(201,146,42,0.14);
       --card:      #1c1208;
       --card-bdr:  rgba(201,146,42,0.18);
@@ -148,8 +148,8 @@
     section { padding: 52px 24px; border-bottom: 0.5px solid var(--rule); }
     .container { max-width: 760px; margin: 0 auto; }
     .section-label {
-      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--text-dim); margin-bottom: 8px;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gold-lt); margin-bottom: 8px; font-weight: 500;
     }
     .section-title { font-size: 20px; font-weight: 500; margin-bottom: 24px; }
 
@@ -191,7 +191,7 @@
       background: var(--gold-dim);
       padding: 3px 9px; border-radius: 4px;
     }
-    .ep-series { font-size: 11px; color: var(--text-dim); }
+    .ep-series { font-size: 11px; color: var(--text-sec); }
     .ep-title { font-size: 15px; font-weight: 500; margin-bottom: 5px; }
     .ep-desc { font-size: 13px; color: var(--text-sec); line-height: 1.55; }
     .ep-play {
@@ -216,9 +216,10 @@
     }
     .blog-card:hover { border-color: var(--gold); }
     .blog-tag {
-      display: inline-block; font-size: 10px;
-      background: rgba(255,255,255,0.05); color: var(--text-dim);
-      padding: 3px 9px; border-radius: 4px;
+      display: inline-block; font-size: 11px; font-weight: 500;
+      background: var(--gold-dim); color: var(--gold-lt);
+      border: 0.5px solid var(--gold-bdr);
+      padding: 4px 10px; border-radius: 4px;
       margin-bottom: 10px; align-self: flex-start;
     }
     .blog-card h3 { font-size: 14px; font-weight: 500; margin-bottom: 7px; line-height: 1.45; }
@@ -308,6 +309,7 @@
     /* ── MOBILE ── */
     @media (max-width: 600px) {
       nav { padding: 12px 16px; }
+      .logo { font-size: 14px; }
       .nav-links { gap: 14px; }
       .hero { padding: 52px 16px 44px; }
       section { padding: 40px 16px; }
@@ -328,7 +330,7 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <div class="logo">Time<em>Lens</em></div>
+  <div class="logo">Time<em>Lens</em>Podcast</div>
   <ul class="nav-links">
     <li><a href="#episodes">Episodes</a></li>
     <li><a href="#blog">Blog</a></li>
@@ -359,7 +361,7 @@
 <section id="listen">
   <div class="container">
     <div class="section-label">Available on</div>
-    <div class="section-title">Listen to TimeLens</div>
+    <div class="section-title">Listen to TimeLensPodcast</div>
     <div class="platforms">
       <a href="https://open.spotify.com/show/YOUR_SHOW_ID" class="platform-btn" target="_blank" rel="noopener">
         <span class="platform-dot" style="background:#1db954;"></span>Spotify
@@ -559,7 +561,7 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <div class="footer-logo">Time<em>Lens</em></div>
+  <div class="footer-logo">Time<em>Lens</em>Podcast</div>
   <div class="footer-sub">Ancient India through field investigation</div>
   <div class="footer-links">
     <a href="https://timelenspodcast.blogspot.com" target="_blank" rel="noopener">Blog</a>
