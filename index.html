@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TimeLensPodcast — Ancient India Through Field Investigation</title>
-  <meta name="description" content="Field investigations into Mahabharata, Ramayana, Harappan history and the lost Sarasvati river. Lipi vs. Nambikke — cross-referencing inscriptions with oral traditions." />
-  <meta name="keywords" content="TimeLensPodcast, ancient India, Mahabharata, Ramayana, Harappan, Sarasvati river, Ashokan edicts, epigraphy, Indian history podcast, Karnataka archaeology" />
-  <meta name="author" content="TimeLensPodcast" />
-  <link rel="canonical" href="https://timelenspodcast.xyz/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="TimeLensPodcast — Ancient India Through Field Investigation" />
-  <meta property="og:description" content="Rediscovering ancient India one site at a time. Lipi vs. Nambikke — inscriptions meet oral tradition." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://timelenspodcast.xyz/" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="TimeLensPodcast" />
-  <meta name="twitter:description" content="Field investigations into ancient India — Mahabharata, Ramayana, Ashokan edicts, Harappan history." />
-
-  <!-- JSON-LD Structured Data -->
+  <meta name="description" content="Field investigations into Mahabharata, Ramayana, Harappan history and the lost Sarasvati river. Lipi vs. Nambikke — cross-referencing inscriptions with oral traditions.">
+  <meta name="keywords" content="TimeLensPodcast, ancient India, Mahabharata, Ramayana, Harappan, Sarasvati river, Ashokan edicts, epigraphy, Indian history podcast, Karnataka archaeology">
+  <meta name="author" content="TimeLensPodcast">
+  <link rel="canonical" href="https://timelenspodcast.com/">
+  <meta property="og:title" content="TimeLensPodcast — Ancient India Through Field Investigation">
+  <meta property="og:description" content="Rediscovering ancient India one site at a time. Lipi vs. Nambikke — inscriptions meet oral tradition.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timelenspodcast.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TimeLensPodcast">
+  <meta name="twitter:description" content="Field investigations into ancient India — Mahabharata, Ramayana, Ashokan edicts, Harappan history.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "PodcastSeries",
     "name": "TimeLensPodcast",
-    "description": "Field investigations into ancient Indian history — Mahabharata dating, Ramayana geography, Harappan-Vedic connections, Ashokan edicts, and the lost Sarasvati river. Using the Lipi vs. Nambikke methodology: cross-referencing inscribed evidence with oral traditions.",
-    "url": "https://timelenspodcast.xyz/",
-    "author": {
-      "@type": "Person",
-      "name": "Nagendra"
-    },
-    "sameAs": [
-      "https://timelenspodcast.blogspot.com",
-      "https://www.instagram.com/timelenspodcast"
-    ]
+    "url": "https://timelenspodcast.com/",
+    "description": "Field investigations into ancient Indian history — Mahabharata, Ramayana, Ashokan edicts, and the lost Sarasvati river.",
+    "author": { "@type": "Person", "name": "Nagendra Nagarajayya" }
   }
   </script>
-
   <style>
     :root {
-      --bg:        #0f0a06;
-      --bg2:       #1a110a;
-      --bg3:       #241710;
-      --gold:      #c9922a;
-      --gold-lt:   #e8b253;
-      --gold-dim:  rgba(201,146,42,0.18);
-      --gold-bdr:  rgba(201,146,42,0.30);
-      --text:      #fffaf0;
+      --bg:        #0e0b07;
+      --bg2:       #15100a;
+      --bg3:       #1e1610;
+      --border:    #3a2c1a;
+      --gold:      #c8832a;
+      --gold-lt:   #e8a84a;
+      --amber:     #d4943c;
+      --text:      #f0e8d8;
       --text-sec:  #e3c08c;
       --text-dim:  #b08e62;
-      --rule:      rgba(201,146,42,0.14);
-      --card:      #1c1208;
-      --card-bdr:  rgba(201,146,42,0.18);
-      --radius:    10px;
-      --radius-lg: 14px;
-      --font:      -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --pill-bg:   #2a1e0e;
+      --pill-gold: #3a2a0e;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -66,459 +46,494 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: var(--font);
-      background: var(--bg);
-      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
       font-size: 17px;
       line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
+      background: var(--bg);
+      color: var(--text);
     }
 
     a { color: var(--gold-lt); text-decoration: none; }
-    a:hover { color: var(--text); }
+    a:hover { color: var(--amber); text-decoration: underline; }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
+      background: rgba(14,11,7,0.96);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 14px 24px;
-      background: rgba(15,10,6,0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 0.5px solid var(--rule);
+      height: 56px;
     }
-    .logo {
-      font-size: 18px; font-weight: 600; letter-spacing: 0.06em;
-      color: var(--text);
+    .nav-brand {
+      font-size: 20px; font-weight: bold;
+      color: var(--text); letter-spacing: 0.01em;
     }
-    .logo em { color: var(--gold); font-style: normal; }
-    .nav-links { display: flex; gap: 22px; list-style: none; }
-    .nav-links a { font-size: 15px; color: var(--text-sec); }
-    .nav-links a:hover { color: var(--gold-lt); }
+    .nav-brand em { color: var(--gold-lt); font-style: italic; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--text-sec); font-family: Arial, sans-serif; font-size: 15px; }
+    .nav-links a:hover { color: var(--gold-lt); text-decoration: none; }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
-      padding: 72px 24px 60px;
-      text-align: center;
-      background: radial-gradient(ellipse 70% 60% at 50% 0%, #2c1a08 0%, var(--bg) 80%);
-      border-bottom: 0.5px solid var(--rule);
+      padding: 80px 24px 72px;
+      max-width: 760px; margin: 0 auto; text-align: center;
     }
     .eyebrow {
       display: inline-block;
-      font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
+      font-family: Arial, sans-serif; font-size: 13px;
+      letter-spacing: 0.15em; text-transform: uppercase;
       color: var(--gold-lt);
-      background: var(--gold-dim);
-      border: 0.5px solid var(--gold-bdr);
-      padding: 5px 16px; border-radius: 20px;
       margin-bottom: 22px;
     }
     .hero h1 {
-      font-size: clamp(22px, 5vw, 38px);
-      font-weight: 500; line-height: 1.25;
-      color: var(--text);
-      max-width: 640px; margin: 0 auto 16px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2; color: var(--text);
+      margin-bottom: 20px;
     }
-    .hero h1 em {
-      font-style: normal; color: var(--gold-lt);
+    .hero h1 em { color: var(--gold-lt); font-style: italic; }
+    .hero p {
+      font-size: 19px; color: var(--text-sec);
+      max-width: 600px; margin: 0 auto 36px;
     }
-    .hero-sub {
-      font-size: 17px; color: var(--text-sec);
-      max-width: 540px; margin: 0 auto 32px;
-      line-height: 1.7;
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold); color: #0e0b07;
+      padding: 12px 26px; border-radius: 4px;
+      font-family: Arial, sans-serif; font-size: 15px; font-weight: bold;
     }
-    .hero-btns {
-      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    .btn-primary:hover { background: var(--gold-lt); text-decoration: none; color: #0e0b07; }
+    .btn-secondary {
+      border: 1px solid var(--border); color: var(--text-sec);
+      padding: 12px 26px; border-radius: 4px;
+      font-family: Arial, sans-serif; font-size: 15px;
     }
-    .btn {
-      display: inline-flex; align-items: center; gap: 7px;
-      padding: 11px 22px; border-radius: var(--radius);
-      font-size: 16px; font-weight: 500; cursor: pointer;
-      transition: opacity 0.15s, transform 0.1s;
-      border: none;
-    }
-    .btn:active { transform: scale(0.97); }
-    .btn-gold { background: var(--gold); color: #fff; }
-    .btn-gold:hover { opacity: 0.88; color: #fff; }
-    .btn-outline {
-      background: transparent; color: var(--gold-lt);
-      border: 0.5px solid var(--gold-bdr);
-    }
-    .btn-outline:hover { background: var(--gold-dim); color: var(--gold-lt); }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold-lt); text-decoration: none; }
 
-    /* ── SECTIONS ── */
-    section { padding: 52px 24px; border-bottom: 0.5px solid var(--rule); }
-    .container { max-width: 760px; margin: 0 auto; }
-    .section-label {
-      font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--gold-lt); margin-bottom: 10px; font-weight: 600;
-    }
-    .section-title { font-size: 24px; font-weight: 500; margin-bottom: 26px; }
-
-    /* ── LISTEN ── */
+    /* PLATFORM BADGES */
     .platforms {
-      display: flex; flex-wrap: wrap; gap: 10px;
+      padding: 28px 24px 48px;
+      text-align: center; border-top: 1px solid var(--border);
     }
-    .platform-btn {
-      display: inline-flex; align-items: center; gap: 9px;
-      padding: 10px 18px;
-      background: var(--card);
-      border: 0.5px solid var(--card-bdr);
-      border-radius: var(--radius);
-      font-size: 16px; color: var(--text-sec);
-      transition: border-color 0.15s, color 0.15s;
+    .platforms-label {
+      font-family: Arial, sans-serif; font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--text-dim); margin-bottom: 18px;
     }
-    .platform-btn:hover { border-color: var(--gold); color: var(--gold-lt); }
-    .platform-dot {
-      width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0;
+    .platform-links { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .platform-links a {
+      font-family: Arial, sans-serif; font-size: 14px;
+      color: var(--text-sec); border: 1px solid var(--border);
+      padding: 8px 18px; border-radius: 3px;
+    }
+    .platform-links a:hover { border-color: var(--gold); color: var(--gold-lt); text-decoration: none; }
+
+    /* SECTION */
+    section { padding: 64px 24px; }
+    section + section { border-top: 1px solid var(--border); }
+    .section-inner { max-width: 900px; margin: 0 auto; }
+    .section-label {
+      font-family: Arial, sans-serif; font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.15em;
+      color: var(--gold-lt); margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 28px; color: var(--text);
+      margin-bottom: 36px;
     }
 
-    /* ── EPISODES ── */
-    .ep-list { display: flex; flex-direction: column; gap: 12px; }
+    /* SERIES GROUP */
+    .series-group { margin-bottom: 52px; }
+    .series-group:last-child { margin-bottom: 0; }
+    .series-heading {
+      font-family: Arial, sans-serif; font-size: 13px;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px; margin-bottom: 24px;
+    }
+    .series-heading strong { color: var(--gold-lt); }
+
+    /* EPISODE CARDS */
+    .ep-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
     .ep-card {
-      background: var(--card);
-      border: 0.5px solid var(--card-bdr);
-      border-radius: var(--radius-lg);
-      padding: 18px 20px;
-      transition: border-color 0.15s;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 22px;
+      display: flex; flex-direction: column; gap: 10px;
     }
-    .ep-card:hover { border-color: var(--gold); }
-    .ep-meta {
-      display: flex; align-items: center; gap: 10px;
-      margin-bottom: 8px;
+    .ep-tag {
+      font-family: Arial, sans-serif; font-size: 11px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--gold); background: var(--pill-gold);
+      display: inline-block; padding: 3px 9px; border-radius: 2px;
+      width: fit-content;
     }
-    .ep-num {
-      font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--gold);
-      background: var(--gold-dim);
-      padding: 4px 10px; border-radius: 4px;
+    .ep-title {
+      font-size: 17px; color: var(--text); line-height: 1.35;
     }
-    .ep-series { font-size: 13px; color: var(--text-sec); }
-    .ep-title { font-size: 18px; font-weight: 500; margin-bottom: 7px; }
-    .ep-desc { font-size: 15px; color: var(--text-sec); line-height: 1.6; }
-    .ep-play {
-      display: inline-flex; align-items: center; gap: 6px;
-      margin-top: 12px; font-size: 14px; color: var(--gold);
+    .ep-desc {
+      font-size: 14px; color: var(--text-dim); line-height: 1.55; flex: 1;
     }
-    .ep-play svg { width: 15px; height: 15px; fill: currentColor; }
+    .ep-links {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px;
+    }
+    .ep-links a {
+      font-family: Arial, sans-serif; font-size: 12px;
+      color: var(--text-sec); border: 1px solid var(--border);
+      padding: 5px 12px; border-radius: 2px;
+    }
+    .ep-links a:hover { border-color: var(--gold); color: var(--gold-lt); text-decoration: none; }
 
-    /* ── BLOG ── */
+    /* BLOG CARDS */
     .blog-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+      margin-bottom: 28px;
     }
     .blog-card {
-      background: var(--card);
-      border: 0.5px solid var(--card-bdr);
-      border-radius: var(--radius-lg);
-      padding: 16px 18px;
-      display: flex; flex-direction: column;
-      transition: border-color 0.15s;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 24px;
+      display: flex; flex-direction: column; gap: 10px;
     }
-    .blog-card:hover { border-color: var(--gold); }
+    .blog-tags { display: flex; gap: 8px; flex-wrap: wrap; }
     .blog-tag {
-      display: inline-block; font-size: 13px; font-weight: 500;
-      background: var(--gold-dim); color: var(--gold-lt);
-      border: 0.5px solid var(--gold-bdr);
-      padding: 4px 10px; border-radius: 4px;
-      margin-bottom: 10px; align-self: flex-start;
+      font-family: Arial, sans-serif; font-size: 11px;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--gold-lt); background: var(--pill-gold);
+      padding: 3px 8px; border-radius: 2px;
     }
-    .blog-card h3 { font-size: 17px; font-weight: 500; margin-bottom: 8px; line-height: 1.45; }
-    .blog-card p { font-size: 15px; color: var(--text-sec); line-height: 1.6; flex: 1; }
-    .blog-card .read-more {
-      font-size: 14px; color: var(--gold); margin-top: 12px;
+    .blog-title { font-size: 18px; color: var(--text); line-height: 1.35; }
+    .blog-excerpt { font-size: 14px; color: var(--text-dim); line-height: 1.55; flex: 1; }
+    .blog-read {
+      font-family: Arial, sans-serif; font-size: 13px;
+      color: var(--gold-lt); margin-top: 4px;
     }
-
-    /* ── REELS ── */
-    .reels-row {
-      display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px;
-      scrollbar-width: none;
-    }
-    .reels-row::-webkit-scrollbar { display: none; }
-    .reel-card {
-      flex-shrink: 0;
-      width: 120px; height: 180px;
-      background: var(--bg2);
-      border: 0.5px solid var(--card-bdr);
-      border-radius: var(--radius-lg);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: flex-end;
-      padding: 12px 8px;
-      position: relative; overflow: hidden;
-      transition: border-color 0.15s;
-      cursor: pointer;
-    }
-    .reel-card:hover { border-color: var(--gold); }
-    .reel-card .reel-icon-bg {
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%, -65%);
-      font-size: 32px; color: rgba(201,146,42,0.25);
-      pointer-events: none;
-    }
-    .reel-label {
-      font-size: 13px; color: var(--gold-lt);
-      text-align: center; line-height: 1.4; position: relative;
-    }
-    .reel-series-tag {
-      position: absolute; top: 8px; left: 8px;
-      font-size: 9px; letter-spacing: 0.08em;
-      color: var(--gold); background: var(--gold-dim);
-      padding: 2px 7px; border-radius: 3px;
+    .blog-read:hover { color: var(--amber); }
+    .blog-all {
+      font-family: Arial, sans-serif; font-size: 14px;
+      color: var(--text-dim);
     }
 
-    /* ── METHODOLOGY ── */
-    .method-box {
-      background: var(--bg2);
-      border: 0.5px solid var(--gold-bdr);
-      border-radius: var(--radius-lg);
-      padding: 28px 28px;
-      text-align: center;
+    /* REELS */
+    .reels-grid {
+      display: flex; gap: 12px; flex-wrap: wrap;
     }
-    .method-badge {
-      display: inline-flex; align-items: center; gap: 7px;
-      font-size: 15px; font-weight: 500; color: var(--gold-lt);
-      margin-bottom: 14px;
+    .reel-pill {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 24px; padding: 10px 18px;
+      font-family: Arial, sans-serif; font-size: 14px;
+      color: var(--text-sec);
     }
-    .method-badge svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; }
-    .method-box p { font-size: 16px; color: var(--text-sec); max-width: 480px; margin: 0 auto; line-height: 1.7; }
-    .vs-divider {
-      display: flex; align-items: center; justify-content: center; gap: 16px;
-      margin: 20px 0;
+    .reel-pill:hover { border-color: var(--gold); color: var(--gold-lt); text-decoration: none; }
+    .reels-follow {
+      margin-top: 24px;
+      font-family: Arial, sans-serif; font-size: 14px;
     }
-    .vs-pill {
-      background: var(--bg3); border: 0.5px solid var(--card-bdr);
-      padding: 8px 20px; border-radius: var(--radius);
-      font-size: 15px; color: var(--text-sec);
-    }
-    .vs-pill strong { color: var(--gold-lt); font-weight: 500; }
-    .vs-sep { font-size: 13px; color: var(--text-sec); }
 
-    /* ── FOOTER ── */
+    /* LIPI VS NAMBIKKE */
+    .lnk-box {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 40px 36px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 24px; align-items: center;
+      max-width: 680px;
+    }
+    .lnk-side { text-align: center; }
+    .lnk-term {
+      font-size: 26px; color: var(--gold-lt); margin-bottom: 6px;
+    }
+    .lnk-role {
+      font-family: Arial, sans-serif; font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--text-dim); margin-bottom: 10px;
+    }
+    .lnk-def { font-size: 15px; color: var(--text-sec); }
+    .lnk-vs {
+      font-family: Arial, sans-serif; font-size: 18px;
+      color: var(--border); text-align: center;
+    }
+    .lnk-p {
+      font-size: 16px; color: var(--text-sec);
+      max-width: 640px; margin-top: 28px; line-height: 1.75;
+    }
+
+    /* FOOTER */
     footer {
-      padding: 36px 24px;
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      display: flex; flex-direction: column; align-items: center; gap: 18px;
       text-align: center;
-      background: var(--bg2);
     }
-    .footer-logo { font-size: 19px; font-weight: 600; letter-spacing: 0.06em; color: var(--text); margin-bottom: 8px; }
-    .footer-logo em { color: var(--gold); font-style: normal; }
-    .footer-sub { font-size: 15px; color: var(--text-sec); margin-bottom: 18px; }
-    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
-    .footer-links a { font-size: 15px; color: var(--text-sec); }
-    .footer-links a:hover { color: var(--gold-lt); }
-    .footer-copy { font-size: 13px; color: var(--text-sec); }
+    .footer-brand { font-size: 19px; color: var(--text); }
+    .footer-brand em { color: var(--gold-lt); font-style: italic; }
+    .footer-tagline { font-size: 14px; color: var(--text-dim); }
+    .footer-links {
+      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+    }
+    .footer-links a {
+      font-family: Arial, sans-serif; font-size: 13px; color: var(--text-dim);
+    }
+    .footer-links a:hover { color: var(--gold-lt); text-decoration: none; }
+    .footer-copy {
+      font-family: Arial, sans-serif; font-size: 12px; color: var(--border);
+    }
 
-    /* ── MOBILE ── */
     @media (max-width: 600px) {
-      nav { padding: 12px 16px; }
-      .logo { font-size: 14px; }
-      .nav-links { gap: 14px; }
-      .hero { padding: 52px 16px 44px; }
-      section { padding: 40px 16px; }
-      .vs-divider { flex-direction: column; gap: 8px; }
-      .vs-sep { transform: rotate(90deg); }
-    }
-
-    @media (max-width: 400px) {
-      .nav-links { display: none; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; }
+      .lnk-box { grid-template-columns: 1fr; text-align: center; }
+      .lnk-vs { display: none; }
+      nav { padding: 0 16px; }
+      .nav-links { gap: 16px; }
     }
   </style>
 </head>
 <body>
 
-<!-- ── NAV ── -->
+<!-- NAV -->
 <nav>
-  <div class="logo">Time<em>Lens</em>Podcast</div>
+  <span class="nav-brand">Time<em>Lens</em>Podcast</span>
   <ul class="nav-links">
     <li><a href="#episodes">Episodes</a></li>
     <li><a href="#blog">Blog</a></li>
     <li><a href="#reels">Reels</a></li>
-    <li><a href="https://timelenspodcast.blogspot.com/p/about.html" target="_blank" rel="noopener">About</a></li>
+    <li><a href="https://timelenspodcast.blogspot.com/p/about.html">About</a></li>
   </ul>
 </nav>
 
-<!-- ── HERO ── -->
-<header class="hero">
-  <div class="eyebrow">Lipi vs. Nambikke</div>
+<!-- HERO -->
+<div class="hero">
+  <span class="eyebrow">Lipi vs. Nambikke</span>
   <h1>Rediscovering <em>Ancient India</em> — one field visit at a time</h1>
-  <p class="hero-sub">
-    We travel to historical sites across India, collect oral traditions from locals and ASI guides, and cross-reference them against inscriptions and physical evidence.
-  </p>
+  <p>We travel to historical sites across India, collect oral traditions from locals and ASI guides, and cross-reference them against inscriptions and physical evidence.</p>
   <div class="hero-btns">
-    <a href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ" class="btn btn-gold" target="_blank" rel="noopener">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-      Listen on Spotify
-    </a>
-    <a href="https://timelenspodcast.blogspot.com" class="btn btn-outline" target="_blank" rel="noopener">
-      Read the blog
-    </a>
+    <a class="btn-primary" href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ">Listen on Spotify</a>
+    <a class="btn-secondary" href="https://timelenspodcast.blogspot.com">Read the blog</a>
   </div>
-</header>
+</div>
 
-<!-- ── LISTEN ── -->
-<section id="listen">
-  <div class="container">
-    <div class="section-label">Available on</div>
-    <div class="section-title">Listen to TimeLensPodcast</div>
-    <div class="platforms">
-      <a href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ" class="platform-btn" target="_blank" rel="noopener">
-        <span class="platform-dot" style="background:#1db954;"></span>Spotify
-      </a>
-      <a href="https://podcasts.apple.com/us/podcast/nagendra-nagarajayya-and-akul-nagendras-time-lens/id1826416783" class="platform-btn" target="_blank" rel="noopener">
-        <span class="platform-dot" style="background:#a855f7;"></span>Apple Podcasts
-      </a>
-      <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e/nagendra-nagarajayya-and-akul-nagendras-time-lens" class="platform-btn" target="_blank" rel="noopener">
-        <span class="platform-dot" style="background:#f97316;"></span>Amazon Music
-      </a>
-      <a href="https://www.youtube.com/playlist?list=PL3U1OyKcPyshFkFRZz9y3sXWnXHN2Nvkl" class="platform-btn" target="_blank" rel="noopener">
-        <span class="platform-dot" style="background:#ef4444;"></span>YouTube
-      </a>
-    </div>
+<!-- PLATFORM BADGES -->
+<div class="platforms">
+  <p class="platforms-label">Listen to TimeLensPodcast</p>
+  <div class="platform-links">
+    <a href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ">Spotify</a>
+    <a href="https://podcasts.apple.com/us/podcast/nagendra-nagarajayya-and-akul-nagendras-time-lens/id1826416783">Apple Podcasts</a>
+    <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e/nagendra-nagarajayya-and-akul-nagendras-time-lens">Amazon Music</a>
+    <a href="https://www.youtube.com/playlist?list=PL3U1OyKcPyshFkFRZz9y3sXWnXHN2Nvkl">YouTube</a>
   </div>
-</section>
+</div>
 
-<!-- ── EPISODES ── -->
+<!-- EPISODES -->
 <section id="episodes">
-  <div class="container">
-    <div class="section-label">Series 1 &amp; 2 — Now Streaming</div>
-    <div class="section-title">Latest episodes</div>
-    <div class="ep-list">
+  <div class="section-inner">
+    <p class="section-label">Now Streaming — All 3 Series</p>
+    <h2 class="section-title">Latest episodes</h2>
 
-      <a href="https://timelenspodcast.blogspot.com/2025/11/episode-2-where-hidimbi-married-bheema.html" class="ep-card" target="_blank" rel="noopener" style="display:block; text-decoration:none; color:inherit;">
-        <div class="ep-meta">
-          <span class="ep-num">Ep 1</span>
-          <span class="ep-series">Series 2</span>
-        </div>
-        <div class="ep-title">Chitradurga — Where Hidimbi Married Bheema</div>
-        <div class="ep-desc">Hoysala temples, a mysterious giant tooth relic, and defensive caves where the Pandavas worshipped — the Mahabharata marriage of Bheema and Hidimbi, traced to a real place a few hours from home.</div>
-        <div class="ep-play">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          Read &amp; listen
-        </div>
-      </a>
+    <!-- SERIES 3 -->
+    <div class="series-group">
+      <p class="series-heading"><strong>Series 3</strong> — Chitradurga: Ashokan Minor Rock Edicts</p>
+      <div class="ep-grid">
 
-      <a href="https://timelenspodcast.blogspot.com/2025/07/episode-1-hampi-anjaneyas-birthplace.html" class="ep-card" target="_blank" rel="noopener" style="display:block; text-decoration:none; color:inherit;">
-        <div class="ep-meta">
-          <span class="ep-num">Ep 1</span>
-          <span class="ep-series">Series 1</span>
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E1</span>
+          <div class="ep-title">Brahmagiri — An Emperor's Message in the Middle of Nowhere</div>
+          <div class="ep-desc">A 2,300-year-old Ashokan edict in Brahmi script, sent from Suvarnagiri, carved by Capada — on a hilltop almost no one visits today.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/fgIlMidB33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e1-brahmagiri-an-emperors-message-in-the/id1826416783?i=1000773284514">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
         </div>
-        <div class="ep-title">Hampi — Anjaneya's Birthplace and Ancient History</div>
-        <div class="ep-desc">A 575-step climb at dawn to Hanuman's birthplace, a crossing to Rishimukha cave, and the surprising overlap between Kishkindha and the Vijayanagara Empire.</div>
-        <div class="ep-play">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          Read &amp; listen
-        </div>
-      </a>
 
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E2</span>
+          <div class="ep-title">Siddapura — Deeper Into Nowhere</div>
+          <div class="ep-desc">Two kilometres from Brahmagiri, a second edict on a rocky hillock. Hand-built stone steps lead to a place nobody visits anymore.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/LM45dlwB33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e2-siddapura-deeper-into-nowhere/id1826416783?i=1000773284516">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
+        </div>
+
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E3</span>
+          <div class="ep-title">Jatinga-Rameshwara — The Climb and The Revelation</div>
+          <div class="ep-desc">An hour's climb to a third edict — where ASI's own signage points toward a Ramayana connection nobody expected.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/0PEmcOEB33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e3-jatinga-rameshwara-the-climb-and-the-revelation/id1826416783?i=1000773284397">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
+        </div>
+
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E4</span>
+          <div class="ep-title">The Two Shivalingas — Rama, Jatayu and Hanuman</div>
+          <div class="ep-desc">Two Shivalingas side by side. Local tradition preserves a precise account — Rama's emergency installation and Hanuman's journey to Kasi and back.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/Ie7EeD2B33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e4-the-two-shivalingas-rama-jatayu-and-hanuman/id1826416783?i=1000773284449">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
+        </div>
+
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E5</span>
+          <div class="ep-title">Rama's Two Trails</div>
+          <div class="ep-desc">Ravana's flight route and Rama's Kaveri ground journey mapped side by side — geometry, geography, and a stone near our family farm that may bear a royal seal.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/dcpY8wmC33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e5-ramas-two-trails/id1826416783?i=1000773284515">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
+        </div>
+
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E6</span>
+          <div class="ep-title">The Marketplace on the Hill</div>
+          <div class="ep-desc">Pearls, gems, and diamonds were once traded at a Bauddha stupa beside these edicts. The hills weren't remote — the people left when the river ran dry.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/0WsEERuC33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e6-the-marketplace-on-the-hill/id1826416783?i=1000773284448">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
+        </div>
+
+        <div class="ep-card">
+          <span class="ep-tag">S3 / E7</span>
+          <div class="ep-title">The Brahmagiri Revelation</div>
+          <div class="ep-desc">Why is it called Brahmagiri? Saptarishi Gautama, Ahalya, 108 Swayambhu Shivlings in hidden caves — the name reaches back further than Ashoka and further than the Ramayana.</div>
+          <div class="ep-links">
+            <a href="https://spotifycreators-web.app.link/e/aVCggqEC33b">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/s3-e7-the-brahmagiri-revelation/id1826416783?i=1000773284610">Apple</a>
+            <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e">Amazon</a>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- SERIES 2 -->
+    <div class="series-group">
+      <p class="series-heading"><strong>Series 2</strong> — Chitradurga: Mahabharata</p>
+      <div class="ep-grid">
+        <div class="ep-card">
+          <span class="ep-tag">S2 / E1</span>
+          <div class="ep-title">Chitradurga — Where Hidimbi Married Bheema</div>
+          <div class="ep-desc">Hoysala temples, a mysterious giant tooth relic, and defensive caves where the Pandavas worshipped — the Mahabharata marriage of Bheema and Hidimbi, traced to a real place.</div>
+          <div class="ep-links">
+            <a href="https://timelenspodcast.blogspot.com/2025/11/episode-2-where-hidimbi-married-bheema.html">Read &amp; Listen →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERIES 1 -->
+    <div class="series-group">
+      <p class="series-heading"><strong>Series 1</strong> — Hampi: Ramayana</p>
+      <div class="ep-grid">
+        <div class="ep-card">
+          <span class="ep-tag">S1 / E1</span>
+          <div class="ep-title">Hampi — Anjaneya's Birthplace and Ancient History</div>
+          <div class="ep-desc">A 575-step climb at dawn to Hanuman's birthplace, a crossing to Rishimukha cave, and the surprising overlap between Kishkindha and the Vijayanagara Empire.</div>
+          <div class="ep-links">
+            <a href="https://timelenspodcast.blogspot.com/2025/07/episode-1-hampi-anjaneyas-birthplace.html">Read &amp; Listen →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ── BLOG ── -->
-<section id="blog" style="background: var(--bg2);">
-  <div class="container">
-    <div class="section-label">Field notes &amp; research</div>
-    <div class="section-title">From the blog</div>
+<!-- BLOG -->
+<section id="blog">
+  <div class="section-inner">
+    <p class="section-label">Field notes &amp; research</p>
+    <h2 class="section-title">From the blog</h2>
     <div class="blog-grid">
 
-      <a href="https://timelenspodcast.blogspot.com/2025/11/episode-2-where-hidimbi-married-bheema.html" class="blog-card" target="_blank" rel="noopener">
-        <span class="blog-tag">Series 2 · Mahabharata</span>
-        <h3>Chitradurga — Where Hidimbi Married Bheema</h3>
-        <p>Hoysala temples, a mysterious giant tooth relic, and defensive caves where the Pandavas worshipped — tracing a Mahabharata marriage to a real place a few hours from home.</p>
-        <span class="read-more">Read on Blogspot →</span>
-      </a>
-
-      <a href="https://timelenspodcast.blogspot.com/2025/07/episode-1-hampi-anjaneyas-birthplace.html" class="blog-card" target="_blank" rel="noopener">
-        <span class="blog-tag">Series 1 · Ramayana</span>
-        <h3>Hampi — Anjaneya's Birthplace and Ancient History</h3>
-        <p>A 575-step climb at dawn to Hanuman's birthplace, a crossing to Rishimukha cave, and the surprising overlap between Kishkindha and the Vijayanagara Empire.</p>
-        <span class="read-more">Read on Blogspot →</span>
-      </a>
-
-    </div>
-    <div style="text-align:center; margin-top: 24px;">
-      <a href="https://timelenspodcast.blogspot.com/p/episodes_17.html" class="btn btn-outline" target="_blank" rel="noopener" style="display:inline-flex;">
-        View all posts on Blogspot →
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ── REELS ── -->
-<section id="reels">
-  <div class="container">
-    <div class="section-label">Instagram</div>
-    <div class="section-title">Reel series</div>
-    <div class="reels-row">
-
-      <a href="https://www.instagram.com/timelenspodcast" class="reel-card" target="_blank" rel="noopener">
-        <span class="reel-series-tag">S3</span>
-        <span class="reel-icon-bg">🪨</span>
-        <span class="reel-label">Brahmagiri edicts</span>
-      </a>
-      <a href="https://www.instagram.com/timelenspodcast" class="reel-card" target="_blank" rel="noopener">
-        <span class="reel-series-tag">S3</span>
-        <span class="reel-icon-bg">📜</span>
-        <span class="reel-label">Siddapura</span>
-      </a>
-      <a href="https://www.instagram.com/timelenspodcast" class="reel-card" target="_blank" rel="noopener">
-        <span class="reel-series-tag">S3</span>
-        <span class="reel-icon-bg">⛰️</span>
-        <span class="reel-label">Jatinga-Rameshwara</span>
-      </a>
-      <a href="https://www.instagram.com/timelenspodcast" class="reel-card" target="_blank" rel="noopener">
-        <span class="reel-series-tag">S2</span>
-        <span class="reel-icon-bg">🏔️</span>
-        <span class="reel-label">Bheema-Hidimbi sites</span>
-      </a>
-      <a href="https://www.instagram.com/timelenspodcast" class="reel-card" target="_blank" rel="noopener">
-        <span class="reel-series-tag">S3</span>
-        <span class="reel-icon-bg">🦅</span>
-        <span class="reel-label">Jatayu's hill</span>
-      </a>
-
-    </div>
-    <div style="margin-top: 18px; text-align: center;">
-      <a href="https://www.instagram.com/timelenspodcast" class="btn btn-outline" target="_blank" rel="noopener" style="display:inline-flex;">
-        Follow @timelenspodcast on Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ── METHODOLOGY ── -->
-<section id="about" style="background: var(--bg2);">
-  <div class="container">
-    <div class="section-label">Our approach</div>
-    <div class="section-title">The Lipi vs. Nambikke framework</div>
-    <div class="method-box">
-      <div class="vs-divider">
-        <div class="vs-pill"><strong>Lipi</strong><br><span style="font-size:13px; color:var(--text-sec);">Inscribed evidence</span></div>
-        <span class="vs-sep" style="color:var(--gold); font-weight:500; font-size:15px;">vs.</span>
-        <div class="vs-pill"><strong>Nambikke</strong><br><span style="font-size:13px; color:var(--text-sec);">Oral tradition &amp; local belief</span></div>
+      <div class="blog-card">
+        <div class="blog-tags">
+          <span class="blog-tag">Series 2</span>
+          <span class="blog-tag">Mahabharata</span>
+        </div>
+        <div class="blog-title">Chitradurga — Where Hidimbi Married Bheema</div>
+        <div class="blog-excerpt">Hoysala temples, a mysterious giant tooth relic, and defensive caves where the Pandavas worshipped — tracing a Mahabharata marriage to a real place a few hours from home.</div>
+        <a class="blog-read" href="https://timelenspodcast.blogspot.com/2025/11/episode-2-where-hidimbi-married-bheema.html">Read on Blogspot →</a>
       </div>
-      <p>
-        Significant knowledge was lost through invasions, natural disasters, and time. We recover it by travelling to sites, recording what ASI guides and local elders carry in memory, and cross-referencing those living traditions against physical inscriptions. Neither source alone tells the whole story.
-      </p>
+
+      <div class="blog-card">
+        <div class="blog-tags">
+          <span class="blog-tag">Series 1</span>
+          <span class="blog-tag">Ramayana</span>
+        </div>
+        <div class="blog-title">Hampi — Anjaneya's Birthplace and Ancient History</div>
+        <div class="blog-excerpt">A 575-step climb at dawn to Hanuman's birthplace, a crossing to Rishimukha cave, and the surprising overlap between Kishkindha and the Vijayanagara Empire.</div>
+        <a class="blog-read" href="https://timelenspodcast.blogspot.com/2025/07/episode-1-hampi-anjaneyas-birthplace.html">Read on Blogspot →</a>
+      </div>
+
     </div>
+    <p class="blog-all"><a href="https://timelenspodcast.blogspot.com">View all posts on Blogspot →</a></p>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="footer-logo">Time<em>Lens</em>Podcast</div>
-  <div class="footer-sub">Ancient India through field investigation</div>
-  <div class="footer-links">
-    <a href="https://timelenspodcast.blogspot.com" target="_blank" rel="noopener">Blog</a>
-    <a href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ" target="_blank" rel="noopener">Spotify</a>
-    <a href="https://podcasts.apple.com/us/podcast/nagendra-nagarajayya-and-akul-nagendras-time-lens/id1826416783" target="_blank" rel="noopener">Apple Podcasts</a>
-    <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e/nagendra-nagarajayya-and-akul-nagendras-time-lens" target="_blank" rel="noopener">Amazon Music</a>
-    <a href="https://www.youtube.com/playlist?list=PL3U1OyKcPyshFkFRZz9y3sXWnXHN2Nvkl" target="_blank" rel="noopener">YouTube</a>
-    <a href="https://www.instagram.com/timelenspodcast" target="_blank" rel="noopener">Instagram</a>
+<!-- REELS -->
+<section id="reels">
+  <div class="section-inner">
+    <p class="section-label">Instagram</p>
+    <h2 class="section-title">Reel series</h2>
+    <div class="reels-grid">
+      <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S3 🪨 Brahmagiri edicts</a>
+      <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S3 📜 Siddapura</a>
+      <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S3 ⛰️ Jatinga-Rameshwara</a>
+      <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S3 🦅 Jatayu's hill</a>
+      <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S2 🏔️ Bheema-Hidimbi sites</a>
+    </div>
+    <p class="reels-follow"><a href="https://www.instagram.com/timelenspodcast">Follow @timelenspodcast on Instagram</a></p>
   </div>
-  <div class="footer-copy">© 2025 TimeLensPodcast · <a href="https://timelenspodcast.blogspot.com">timelenspodcast.blogspot.com</a></div>
+</section>
+
+<!-- LIPI VS NAMBIKKE -->
+<section>
+  <div class="section-inner">
+    <p class="section-label">Our approach</p>
+    <h2 class="section-title">The Lipi vs. Nambikke framework</h2>
+    <div class="lnk-box">
+      <div class="lnk-side">
+        <div class="lnk-term">Lipi</div>
+        <div class="lnk-role">Inscribed evidence</div>
+        <div class="lnk-def">Physical inscriptions, epigraphy, and archaeological record</div>
+      </div>
+      <div class="lnk-vs">vs.</div>
+      <div class="lnk-side">
+        <div class="lnk-term">Nambikke</div>
+        <div class="lnk-role">Oral tradition &amp; local belief</div>
+        <div class="lnk-def">What ASI guides, archakas, and village elders carry in memory</div>
+      </div>
+    </div>
+    <p class="lnk-p">Significant knowledge was lost through invasions, natural disasters, and time. We recover it by travelling to sites, recording what people carry in living memory, and cross-referencing those traditions against physical inscriptions. Neither source alone tells the whole story.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Time<em>Lens</em>Podcast</div>
+  <div class="footer-tagline">Ancient India through field investigation</div>
+  <div class="footer-links">
+    <a href="https://timelenspodcast.blogspot.com">Blog</a>
+    <a href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ">Spotify</a>
+    <a href="https://podcasts.apple.com/us/podcast/nagendra-nagarajayya-and-akul-nagendras-time-lens/id1826416783">Apple Podcasts</a>
+    <a href="https://music.amazon.com/podcasts/39e72bf3-7e8e-4282-84cf-a745b1f3b97e/nagendra-nagarajayya-and-akul-nagendras-time-lens">Amazon Music</a>
+    <a href="https://www.youtube.com/playlist?list=PL3U1OyKcPyshFkFRZz9y3sXWnXHN2Nvkl">YouTube</a>
+    <a href="https://www.instagram.com/timelenspodcast">Instagram</a>
+  </div>
+  <div class="footer-copy">© 2026 TimeLensPodcast · <a href="https://timelenspodcast.blogspot.com" style="color:inherit">timelenspodcast.blogspot.com</a></div>
 </footer>
 
 </body>
