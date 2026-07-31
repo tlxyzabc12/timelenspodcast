@@ -143,6 +143,15 @@
       max-width: 600px; margin: 0 auto 36px;
     }
     .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-instagram {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: #fff;
+      padding: 12px 26px; border-radius: 4px;
+      font-family: Arial, sans-serif; font-size: 15px; font-weight: bold;
+    }
+    .btn-instagram:hover {
+      color: #fff; filter: brightness(1.12); text-decoration: none;
+    }
     .btn-primary {
       background: var(--gold); color: #0e0b07;
       padding: 12px 26px; border-radius: 4px;
@@ -276,6 +285,52 @@
       color: var(--text-sec);
     }
     .reel-pill:hover { border-color: var(--gold); color: var(--gold-lt); text-decoration: none; }
+    .reel-series {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 26px;
+      margin-bottom: 34px;
+    }
+    .reel-series-title {
+      font-size: 22px; color: var(--gold-lt);
+      margin-bottom: 6px;
+    }
+    .reel-series-intro {
+      color: var(--text-dim); font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .reel-episode-list {
+      list-style: none;
+      display: flex; flex-direction: column;
+      border-top: 1px solid var(--border);
+    }
+    .reel-episode {
+      border-bottom: 1px solid var(--border);
+    }
+    .reel-episode a {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 18px; align-items: center;
+      padding: 16px 0;
+    }
+    .reel-episode a:hover { text-decoration: none; }
+    .reel-episode-number {
+      font-family: Arial, sans-serif; font-size: 11px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--gold); background: var(--pill-gold);
+      padding: 4px 9px; border-radius: 2px;
+    }
+    .reel-episode-title {
+      color: var(--text); font-size: 16px; line-height: 1.4;
+    }
+    .reel-episode-link {
+      font-family: Arial, sans-serif; font-size: 12px;
+      color: var(--gold-lt); white-space: nowrap;
+    }
+    .reel-archive-heading {
+      font-family: Arial, sans-serif; font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--text-dim); margin-bottom: 14px;
+    }
     .reels-follow {
       margin-top: 24px;
       font-family: Arial, sans-serif; font-size: 14px;
@@ -339,6 +394,12 @@
       section { padding: 48px 20px; }
       .ep-card, .blog-card { padding: 18px; }
       .platform-links a, .ep-links a { padding: 9px 16px; }
+      .reel-series { padding: 20px; }
+      .reel-episode a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .reel-episode-number { width: fit-content; }
     }
   </style>
 </head>
@@ -364,6 +425,7 @@
   <h1>Rediscovering <em>Ancient India</em> — one field visit at a time</h1>
   <p>We travel to historical sites across India, collect oral traditions from locals and ASI guides, and cross-reference them against inscriptions and physical evidence.</p>
   <div class="hero-btns">
+    <a class="btn-instagram" href="https://www.instagram.com/reel/DbcLVWySWwW/?igsh=NTc4MTIwNjQ2YQ==">Watch on Instagram</a>
     <a class="btn-primary" href="https://open.spotify.com/show/1ZbY0Ry8Uk4Wjx3emwATqJ">Listen on Spotify</a>
     <a class="btn-secondary" href="https://timelenspodcast.blogspot.com">Read the blog</a>
   </div>
@@ -510,6 +572,22 @@
     <p class="section-label">Field notes &amp; research</p>
     <h2 class="section-title">From the blog</h2>
 
+    <!-- RISHIMUKHA FLASHBACK -->
+    <div class="series-group">
+      <p class="series-heading"><strong>Rishimukha Flashback</strong> — returning to the field with Akul</p>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-tags">
+            <span class="blog-tag">S1 / E1</span>
+            <span class="blog-tag">Jatayu · Ramayana</span>
+          </div>
+          <div class="blog-title">Jatayu, Rishimukha and Rama’s Two Trails</div>
+          <div class="blog-excerpt">Three ASI guides, Jatayu’s hill, the Rishimukha cave, and the Kaveri walking-route hypothesis behind our S3/E5 investigation.</div>
+          <a class="blog-read" href="https://timelenspodcast.blogspot.com/2026/07/rishimukha-flashback-s1e1-jatayu.html">Read S1/E1 on Blogspot →</a>
+        </div>
+      </div>
+    </div>
+
     <!-- SERIES 3 -->
     <div class="series-group">
       <p class="series-heading"><strong>Series 3</strong> — Chitradurga: Ashokan Minor Rock Edicts</p>
@@ -629,6 +707,22 @@
   <div class="section-inner">
     <p class="section-label">Instagram</p>
     <h2 class="section-title">Reel series</h2>
+
+    <div class="reel-series">
+      <h3 class="reel-series-title">Rishimukha Flashback Series</h3>
+      <p class="reel-series-intro">Returning to Rishimukha with Akul — revisiting the field evidence, local memory, and Rama connections one episode at a time.</p>
+      <ol class="reel-episode-list">
+        <li class="reel-episode">
+          <a href="https://www.instagram.com/reel/DbcLVWySWwW/?igsh=NTc4MTIwNjQ2YQ==">
+            <span class="reel-episode-number">S1 / E1</span>
+            <strong class="reel-episode-title">Jatayu, Rishimukha and Rama's Two Trails</strong>
+            <span class="reel-episode-link">Watch on Instagram →</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <p class="reel-archive-heading">Earlier reel journeys</p>
     <div class="reels-grid">
       <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S3 🪨 Brahmagiri edicts</a>
       <a class="reel-pill" href="https://www.instagram.com/timelenspodcast">S3 📜 Siddapura</a>
