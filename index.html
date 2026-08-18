@@ -246,12 +246,20 @@
     .latest-card p { color: var(--text-dim); flex: 1; font-size: 14px; line-height: 1.5; margin: 0 0 16px; }
     .latest-card-cta { color: var(--gold-lt); font-family: Arial, sans-serif; font-size: 13px; }
     /* Give each publishing format its own visual territory. */
-    #episodes { background: #15110c; }
-    #blog { background: #10151a; }
-    #reels { background: #171018; }
-    #episodes .series-heading strong { color: #e5b85c; }
-    #blog .series-heading strong { color: #79b7d9; }
-    #reels .section-label, #reels .reel-series-title { color: #ef8ab6; }
+    #episodes { background: linear-gradient(180deg, #0d1b2a 0%, #101820 100%); }
+    #blog { background: linear-gradient(180deg, #21170d 0%, #17120d 100%); }
+    #reels { background: linear-gradient(180deg, #24101d 0%, #171018 100%); }
+    #episodes .series-heading strong { color: #70c7ff; }
+    #blog .series-heading strong { color: #f2b45b; }
+    #reels .section-label, #reels .reel-series-title { color: #ff8fbd; }
+    #episodes .ep-card { border-top: 3px solid #318dcc; }
+    #blog .blog-card { border-top: 3px solid #d8892f; }
+    #reels .reel-series { border-color: #8c3f68; }
+    #reels .reel-episode a { border-left: 4px solid #d95791; }
+    .latest-card:nth-child(1) { border-top: 3px solid #d8892f; }
+    .latest-card:nth-child(2) { border-top: 3px solid #d95791; }
+    .latest-card:nth-child(3) { border-top: 3px solid #318dcc; }
+    .latest-card:nth-child(4) { border-top: 3px solid #b48a42; }
 
     /* SECTION */
     section { padding: 64px 24px; }
