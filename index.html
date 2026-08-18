@@ -246,16 +246,33 @@
     .latest-card p { color: var(--text-dim); flex: 1; font-size: 14px; line-height: 1.5; margin: 0 0 16px; }
     .latest-card-cta { color: var(--gold-lt); font-family: Arial, sans-serif; font-size: 13px; }
     /* Give each publishing format its own visual territory. */
-    #episodes { background: linear-gradient(180deg, #0d1b2a 0%, #101820 100%); }
-    #blog { background: linear-gradient(180deg, #21170d 0%, #17120d 100%); }
-    #reels { background: linear-gradient(180deg, #24101d 0%, #171018 100%); }
+    #episodes { background: linear-gradient(180deg, #102b40 0%, #0d202f 100%); }
+    #blog { background: linear-gradient(180deg, #3a2b1d 0%, #2a2016 100%); }
+    #reels { background: linear-gradient(180deg, #3a2032 0%, #281723 100%); }
     #episodes .series-heading strong { color: #70c7ff; }
     #blog .series-heading strong { color: #f2b45b; }
     #reels .section-label, #reels .reel-series-title { color: #ff8fbd; }
-    #episodes .ep-card { border-top: 3px solid #318dcc; }
-    #blog .blog-card { border-top: 3px solid #d8892f; }
-    #reels .reel-series { border-color: #8c3f68; }
+    #episodes .ep-card { background: #dcecf5; border: 1px solid #9fc4d6; border-top: 4px solid #318dcc; }
+    #episodes .ep-title { color: #142b3a; }
+    #episodes .ep-desc { color: #405b6a; }
+    #episodes .ep-tag { color: #164966; background: #b9d9e8; }
+    #episodes .ep-links a { color: #164966; border-color: #8fb5c8; }
+    #blog .blog-card { background: #f3e6d1; border: 1px solid #d6b98d; border-top: 4px solid #d8892f; }
+    #blog .blog-title { color: #302216; }
+    #blog .blog-excerpt { color: #62503b; }
+    #blog .blog-tag { color: #704713; background: #ead0a4; }
+    #blog .blog-read { color: #8a5319; }
+    #reels .reel-series { background: #f0dce8; border-color: #c58aaa; }
+    #reels .reel-series-intro, #reels .reel-archive-heading { color: #65465a; }
+    #reels .reel-episode { border-color: #d2abc2; }
     #reels .reel-episode a { border-left: 4px solid #d95791; }
+    #reels .reel-episode-title { color: #301c2a; }
+    #reels .reel-episode-number { color: #722850; background: #e7bdd5; }
+    #reels .reel-episode-link { color: #9a3f74; }
+    #approach { background: linear-gradient(180deg, #183b3b 0%, #122d2e 100%); }
+    #approach .lnk-box { background: #dcebea; border-color: #8bb8b6; }
+    #approach .lnk-term { color: #165c5a; }
+    #approach .lnk-role, #approach .lnk-def, #approach .lnk-p { color: #355b5b; }
     .latest-card:nth-child(1) { border-top: 3px solid #d8892f; }
     .latest-card:nth-child(2) { border-top: 3px solid #d95791; }
     .latest-card:nth-child(3) { border-top: 3px solid #318dcc; }
@@ -916,7 +933,7 @@
 </section>
 
 <!-- LIPI VS NAMBIKKE -->
-<section>
+<section id="approach">
   <div class="section-inner">
     <p class="section-label">Our approach</p>
     <h2 class="section-title">The Lipi vs. Nambikke framework</h2>
