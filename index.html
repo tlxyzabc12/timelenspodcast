@@ -262,6 +262,9 @@
     .latest-card h3 { color: var(--text); font-size: 18px; line-height: 1.3; margin: 0 0 10px; }
     .latest-card p { color: var(--text-dim); flex: 1; font-size: 14px; line-height: 1.5; margin: 0 0 16px; }
     .latest-card-cta { color: var(--gold-lt); font-family: Arial, sans-serif; font-size: 13px; }
+    .latest-card-actions { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+    .latest-card-actions .latest-card-cta { font-weight: bold; }
+    .latest-card-actions .latest-card-cta:hover { color: var(--amber); text-decoration: underline; }
     /* Give each publishing format its own visual territory. */
     #episodes { background: linear-gradient(180deg, #102b40 0%, #0d202f 100%); }
     #blog { background: linear-gradient(180deg, #3a2b1d 0%, #2a2016 100%); }
@@ -604,12 +607,15 @@
     <p class="latest-hub-label">Latest from TimeLensPodcast</p>
     <h2 class="latest-hub-title">Start here</h2>
     <div class="latest-grid">
-      <a class="latest-card" href="https://timelenspodcast.blogspot.com/2026/08/rishimukha-flashback-s1e4-squirrels.html">
+      <article class="latest-card">
         <span class="latest-card-label">Latest field note · Rishimukha S1/E4</span>
         <h3>The Squirrels Still Chat at Kishkinda</h3>
         <p>Squirrels on Anjanadri Hill, a painted water station, and one clear chattering encounter.</p>
-        <span class="latest-card-cta">Read the field note →</span>
-      </a>
+        <div class="latest-card-actions">
+          <a class="latest-card-cta" href="https://www.instagram.com/reel/DcUUeefSlFI/?igsi=NTc4MTIwNjQ2YQ==">Watch on Instagram →</a>
+          <a class="latest-card-cta" href="https://timelenspodcast.blogspot.com/2026/08/rishimukha-flashback-s1e4-squirrels.html">Read the field notes →</a>
+        </div>
+      </article>
       <a class="latest-card" href="https://spotifycreators-web.app.link/e/aVCggqEC33b">
         <span class="latest-card-label">Podcast · Latest episode</span>
         <h3>S3/E7 — The Brahmagiri Revelation</h3>
